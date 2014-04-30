@@ -6,7 +6,7 @@
 <title>jQuery Mobile Web App</title>
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
 <style type="text/css">
-.ui-page{ background-color:#FFF; background-image:url(assets/header-mobile_01.png); background-repeat:repeat-x; padding-top:0px; text-align:center;}
+.ui-page{ background-color:#FFF; background-image:url(assets/header-mobile_01.png) !important; background-repeat:repeat-x; padding-top:0px; text-align:center;}
 
 .j{
     display: block;
@@ -24,7 +24,11 @@
 
 </head>
 <body> 
+<div data-role="panel" data-theme="a" id="test" data-position="fixed" data-display="push">
 
+        <div><h3>Left Panel: Push</h3><p>This panel is positioned on the left with the push display mode. The panel markup is <em>after</em> the header, content and footer in the source order.</p><p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p><a data-rel="close" href="#page">Close panel</a></div>
+
+	</div>
     
 <div data-role="page" id="page">
 	
@@ -111,10 +115,6 @@ function car(car){
 </script>
 
 <script src="http://www.salecarro.com/json/index.php" type="text/javascript"></script>
-<div data-role="panel" data-theme="a" id="test" data-position="fixed" data-display="push">
 
-        <div><h3>Left Panel: Push</h3><p>This panel is positioned on the left with the push display mode. The panel markup is <em>after</em> the header, content and footer in the source order.</p><p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p><a data-rel="close" href="#page">Close panel</a></div>
-
-	</div>
 </body>
 </html>

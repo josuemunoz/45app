@@ -4,78 +4,73 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, user-scalable=0">
 <title>jQuery Mobile Web App</title>
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
-<style type="text/css">
-.ui-page{ background-color:#FFF; background-image:url(assets/header-mobile_01.png) !important; background-repeat:repeat-x; padding-top:0px; text-align:center;}
+<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
 
-.j{
-    display: block;
-    min-height: 100%; position:absolute;
-    top: 0;
-	width:17em;
-    
-}
-
-
-</style>
-
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
-
-</head>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head> 
 <body> 
-<div data-role="panel" data-theme="a" id="test" data-position="fixed" data-display="push">
 
-        <div><h3>Left Panel: Push</h3><p>This panel is positioned on the left with the push display mode. The panel markup is <em>after</em> the header, content and footer in the source order.</p><p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p><a data-rel="close" href="#page">Close panel</a></div>
-
+<div data-role="page" id="page" data-theme="a">
+	<div data-role="header">
+		<h1><img src="assets/mobile-logo.png" width="200" height="63"></h1>
+        <a data-iconpos="right" data-icon="check" href="" data-role="button" data-native-menu="true">CALL</a>
 	</div>
-    
-<div data-role="page" id="page">
-	
-<div data-role="header" >
-		<a data-role="button" href="#test" data-icon="bars" data-iconpos="notext"></a>
-		
-	</div>
-
-	
-    
-	<div data-role="content"><h1><img src="assets/mobile-logo.png" width="200" height="63"></h1>	
+	<div data-role="content">
+    	<h2>San Diego Cash For Cars</h2>
+<h4>
+Need money for your car, automobile, truck, RV or vehicle fast? If you are thinking about selling your vehicle and want a quick hassle free experience, then call San Diego Cash For Cars. We buy used, damaged, new and high mileage cars with fair and honest pricing.
+</h4>
 		<ul data-role="listview" data-inset="true">
-        	
-			<li><a href="#page2" id="pageA">Car Inventory</a></li>
+			<li><a href="#page2">Car Inventory</a></li>
             <li><a href="#page3">About Us</a></li>
-			<li><a href="#page4">Contact</a></li>
+			<li><a href="#page4">Contact Us</a></li>
+            <li><a href="#page5">Testimonials</a></li>
 		</ul>		
 	</div>
-	<div data-role="footer" data-position="fixed">
-		<h4>Page Footer</h4>
+	<div data-role="footer" data-theme="a" data-position="fixed">
+		
+		<div  class="ui-bar">
+		  <a href="#">Call</a>
+		  <a href="#">Email</a>
+		  <a href="#">Text</a>
+          <span style="float:right">cash for cars 2014</span>
+	  </div>
 	</div>
 </div>
 
 <div data-role="page" id="page2">
-
-
-
 	<div data-role="header">
-		<h1>Car Inventory</h1>
+		<h1><img src="assets/mobile-logo.png" width="200" height="63"></h1>
 	</div>
 	<div data-role="content" id="images">	
 		Content		
 	</div>
 	<div data-role="footer">
-		<h4>Page Footer</h4>
+		<h4>Car Inventory</h4>
 	</div>
 </div>
 
 <div data-role="page" id="page3">
 	<div data-role="header">
-		<h1>Page Three</h1>
+		<h1>About Us</h1>
 	</div>
 	<div data-role="content">	
-		Content		
+		
+<h1>San Diego Cash For Cars</h1>
+<p>
+<p>
+<p>Often, we get calls from people wondering if its worth spending time and money on a car needing extensive repair or is older.  If you are unsure whether it makes sense to fix your car’s engine, replace the transmission, have body work done and or are curious if you should just save your efforts, contact us to find out what is the best option.  San Diego Cash For Cars also specializes in expert automobile repair and will be  able to provide a quick on the spot answer.</p>
+<p>
+<p>Absolutely! San Diego Cash For Cars is interested in your automobile regardless of its condition; running or not, badly damaged and junk vehicles, we will take it off your hands and give you money in hand. In addition, we provide vehicle towing services free if the car cannot be driven.</p>
+<p>
+<p>Just simply call us and our service representative will ask a few basic questions regarding your vehicle. Afterwards, we will come out to your residence or place of business in San Diego to inspect the car where a fair value. The entire process will take less than 20 minutes in most cases depending on the type of vehicle you own.</p>
+<p>Cash For Cars has been successfully purchasing cars from sellers needing to sell their vehicle.  Call us today!</p>
+		
 	</div>
-	<div data-role="footer" data-position="fixed">
-		<h4>Page Footer</h4>
+	<div data-role="footer">
+		<h4>About Us</h4>
 	</div>
 </div>
 
@@ -86,12 +81,46 @@
 	<div data-role="content">	
 		Content		
 	</div>
-	<div data-role="footer" data-position="fixed">
+	<div data-role="footer">
 		<h4>Page Footer</h4>
 	</div>
+    
+    </div>
+    
+	<div data-role="page" id="page5">
+	  <div data-role="header">
+	    <h1>Testimonials</h1>
+      </div>
+	  <div data-role="content">
+      		
+            <h3>Testimonials</h3>
+
+
+Getting tired of people making offers via text before they even look at your car? Getting tired of Craigslist and pretentious buyers?! I was. No joke, Kamal at San Diego Cash for Cars (who previously worked on my car at his mechanic shop and previously gave me best low price out of 6 mechanic shops!!) offered me $250 more than 3 other dealers. Score! Check him out at least before selling your car elsewhere! Or, his place of business off of Euclid in SD! Great guy will give you a good deal and honest experience.
+<strong>James</strong>
+<br>
+<br>
+<br>
+Thank you for the quick service. The buyer, Kamal came over to look at my Honda Civic as it just died on me. He was very polite and funny. He gave me a price for the given the condition of the car. We had a moment of haggling but quickly agreed on a price (as it was dead). With the fact that I didn’t have to worry about transporting the car as he would tow it was well worth the phone call. The whole experience took less than an hour and was totally happy.
+<strong>RightWingMan</strong>
+<br>
+<br>
+<br>
+My wife and I were visiting San Diego to see some family and our car wouldn't start. This place was recommended by a family friend. They were VERY friendly, fast and fair.
+<strong>RKK</strong>
+
+
+
+            
+      </div>
+	  <div data-role="footer">
+	    <h4>Testimonials</h4>
+      </div>
+  </div>
+    
+    
+    
 </div>
-
-
 <script>
 
 
@@ -115,6 +144,5 @@ function car(car){
 </script>
 
 <script src="http://www.salecarro.com/json/index.php" type="text/javascript"></script>
-
 </body>
 </html>

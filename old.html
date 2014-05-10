@@ -1,0 +1,108 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=0">
+<title>jQuery Mobile Web App</title>
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" type="text/css" />
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"> </script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"> </script>
+
+</head>
+<body> 
+
+
+ 
+<div data-role="page" id="page">
+
+	<div data-role="header">
+		<h1>Car Inventory</h1><a data-role="button" href="#test" data-icon="bars" data-iconpos="notext"></a>
+	</div>
+    
+	<div data-role="content">	
+		<ul data-role="listview" data-inset="true">
+        	
+			<li><a href="#page2" data-transition="slide">Car Inventory</a></li>
+            <li><a href="#page3" data-transition="slide">About Us</a></li>
+			<li><a href="#page4" data-transition="slide">Contact</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2">
+
+
+
+	<div data-role="header">
+		<h1>Car Inventory</h1>
+	</div>
+	<div data-role="content" id="images">	
+		Content		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>Page Three</h1>
+	</div>
+	<div data-role="content">	
+		Content		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<h1>Page Four</h1>
+	</div>
+	<div data-role="content">	
+		Content		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
+	</div>
+    
+   
+</div>
+ <div data-role="panel" data-theme="a" id="test" data-position="right">
+
+        <div><h3>Left Panel: Push</h3><p>This panel is positioned on the left with the push display mode. The panel markup is <em>after</em> the header, content and footer in the source order.</p><p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p><a data-rel="close" href="#page">Close panel</a></div>
+
+	</div>
+
+<script>
+
+
+
+function car(car){
+			
+			
+			var img = '';
+				//alert(car.length);
+			for(var i=0; i<car.length; i++){
+			
+				//console.log(car[i].id);
+				//img += '<li style="padding:5px;"><img border="0" src="http://www.salecarro.com/assets/cars_for_sale/'+ car[i].id +'/_small'+ car[i].image+'" alt="Pulpit rock"></li>';
+				img += '<li>' +car[i].image+' '+car[i].price +'</li>';
+				}
+				var r = document.getElementById('images').innerHTML = '<ul data-role="listview" data-inset="true">'+img+"</ul>";
+			
+	};
+        
+           
+</script>
+
+<script src="http://www.salecarro.com/json/index.php" type="text/javascript"></script>
+
+</body>
+</html>
